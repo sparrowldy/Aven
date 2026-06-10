@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人策划作品集 | 你的姓名</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2c3e50',
+            secondary: '#3498db'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      }
+    }
+  </script>
+  <style type="textailwindcss">
+    @layer utilities {
+      .content-auto { content-visibility: auto; }
+      .card-shadow { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-gray-700 font-sans text-lg">
+
+<nav class="sticky top-0 bg-white card-shadow z-10">
+  <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+    <a href="#" class="text-2xl font-bold text-primary mb-2 md:mb-0">个人策划作品集</a>
+    <div class="flex space-x-6 text-gray-600 text-lg">
+      <a href="#about">个人简介</a>
+      <a href="#skill">专业技能</a>
+      <a href="#cases">项目案例</a>
+      <a href="#experience">工作经历</a>
+      <a href="#contact">联系方式</a>
+    </div>
+  </div>
+</nav>
+
+<header class="bg-primary text-white py-20 md:py-32">
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">你好，我是XX</h1>
+    <p class="text-xl md:text-2xl opacity-90 mb-6">资深策划 | 专注活动/品牌/内容策划</p>
+    <p class="max-w-2xl mx-auto text-xl opacity-80">
+      擅长全流程策划落地、方案撰写、活动执行与品牌营销，拥有多年实战经验
+    </p>
+  </div>
+</header>
+
+<!-- 关于我 → 已经居中！-->
+<section id="about" class="py-16 bg-white text-center">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-primary mb-12">个人简介</h2>
+    <div class="max-w-3xl mx-auto leading-relaxed text-xl">
+      <p class="mb-4">本人深耕策划行业X年，主攻<span class="text-secondary font-medium">活动策划/品牌策划/新媒体策划</span>，从前期调研到后期执行，可独立完成全流程工作。</p>
+      <p class="mb-4">擅长挖掘项目亮点，结合受众需求打造创意突出、可落地的策划方案，拥有优秀的文案能力、统筹能力与沟通能力。</p>
+      <p>工作风格严谨细致，注重细节与结果，持续关注行业趋势。</p>
+    </div>
+  </div>
+</section>
+
+<section id="skill" class="py-16 bg-slate-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-primary mb-12">专业技能</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white p-8 rounded-lg card-shadow text-center hover:-translate-y-1 transition-transform">
+        <i class="fa-solid fa-file-pen text-4xl text-secondary mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">方案撰写</h3>
+        <p class="text-gray-600 text-lg">策划案、推文、文案、复盘报告</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg card-shadow text-center hover:-translate-y-1 transition-transform">
+        <i class="fa-solid fa-calendar-days text-4xl text-secondary mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">活动统筹</h3>
+        <p class="text-gray-600 text-lg">线上线下活动全流程策划、执行、现场管控</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg card-shadow text-center hover:-translate-y-1 transition-transform">
+        <i class="fa-solid fa-bullhorn text-4xl text-secondary mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">品牌营销</h3>
+        <p class="text-gray-600 text-lg">品牌推广、话题打造、流量运营</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg card-shadow text-center hover:-translate-y-1 transition-transform">
+        <i class="fa-solid fa-users text-4xl text-secondary mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">资源对接</h3>
+        <p class="text-gray-600 text-lg">合作洽谈、供应商对接、团队协作</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cases" class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-primary mb-12">精选项目案例</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- 项目1 -->
+      <div class="rounded-lg overflow-hidden card-shadow group">
+        <a href="project1.html">
+          <img src="images/project1-cover.jpg" alt="项目1封面" class="w-full h-52 object-cover">
+        </a>
+        <div class="p-6">
+          <a href="project1.html" class="text-xl font-bold mb-2 text-primary hover:text-secondary transition-colors block">项目名称一</a>
+          <span class="inline-block bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full mb-3">活动策划</span>
+          <p class="text-gray-600 text-lg mb-4">点击项目名称/图片查看详情</p>
+        </div>
+      </div>
+
+      <!-- 项目2 -->
+      <div class="rounded-lg overflow-hidden card-shadow group">
+        <a href="project2.html">
+          <img src="images/project2-cover.jpg" alt="项目2封面" class="w-full h-52 object-cover">
+        </a>
+        <div class="p-6">
+          <a href="project2.html" class="text-xl font-bold mb-2 text-primary hover:text-secondary transition-colors block">项目名称二</a>
+          <span class="inline-block bg-green-100 text-green-600 text-sm px-3 py-1 rounded-full mb-3">新媒体策划</span>
+          <p class="text-gray-600 text-lg mb-4">点击项目名称/图片查看详情</p>
+        </div>
+      </div>
+
+      <!-- 项目3 -->
+      <div class="rounded-lg overflow-hidden card-shadow group">
+        <a href="project3.html">
+          <img src="images/project3-cover.jpg" alt="项目3封面" class="w-full h-52 object-cover">
+        </a>
+        <div class="p-6">
+          <a href="project3.html" class="text-xl font-bold mb-2 text-primary hover:text-secondary transition-colors block">项目名称三</a>
+          <span class="inline-block bg-orange-100 text-orange-600 text-sm px-3 py-1 rounded-full mb-3">品牌策划</span>
+          <p class="text-gray-600 text-lg mb-4">点击项目名称/图片查看详情</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="experience" class="py-16 bg-slate-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-primary mb-12">工作经历</h2>
+    <div class="max-w-3xl mx-auto space-y-8">
+      <div class="bg-white p-6 rounded-lg card-shadow">
+        <div class="flex justify-between items-center mb-2">
+          <h3 class="text-xl font-semibold">XX公司 | 策划</h3>
+          <span class="text-gray-500 text-lg">20XX.XX - 至今</span>
+        </div>
+        <p class="text-gray-600 text-lg">负责策划方案撰写、活动统筹、项目执行、资源对接。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-16 bg-white">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-primary mb-8">联系我</h2>
+    <div class="flex flex-wrap justify-center gap-8 text-xl">
+      <div class="flex items-center"><i class="fa-solid fa-envelope text-secondary text-2xl mr-3"></i><span>邮箱：xxx@163.com</span></div>
+      <div class="flex items-center"><i class="fa-solid fa-phone text-secondary text-2xl mr-3"></i><span>电话：138-XXXX-XXXX</span></div>
+      <div class="flex items-center"><i class="fa-solid fa-weixin text-secondary text-2xl mr-3"></i><span>微信：XXXXXX</span></div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-primary text-white py-6 text-center text-lg">
+  <p>© 2026 个人策划作品集 | 版权所有</p>
+</footer>
+</body>
+</html>
